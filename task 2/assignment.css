@@ -1,0 +1,164 @@
+*{                                                  /*styling the all part of the html page*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {                  /*styling the nav bar*/
+    display: flex;
+    background:#1e90ff;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+}
+.icon{      /*styling the icon in the nav bar*/
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffff;
+    text-decoration: none;
+
+}
+
+.bar {    /*styling the links of drop menu and hiding it*/
+    display: flex;
+    align-self: center;
+    margin-right: 10px;
+    display: none;
+}
+
+.bar a {    /*decorating the text inside the menu*/
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(4, 4, 4);
+}
+.navbar { /*aligning the menu and giving the padding*/
+    align-self: center;
+    padding:10px;
+}
+.navbar a{ /*decorating the menu links */
+    text-decoration: none;
+    color: aliceblue;
+}
+nav .Search_box {   /*working on search box here*/
+    height: 30px;
+    width: 300px;
+    align-self: center;
+}
+
+.flim1 {        /*placing the container 1 here and giving the shadow to the box*/
+    height: fit-content;
+    box-shadow: 1.5px 1.5px rgb(197, 197, 197);
+}
+
+.sideflim {   /*keeping the container class to the side of the page*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.top {             /*giving the class to the top two of the containers and putting it in the column*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bottom {    /*giving the class to the bottom two of the containers and putting it in the column*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.content { /*taking content in the column direction the heading,paragraphs and button by giving the class content*/
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+button{ /*decorating the button*/
+    background-color:#1e90ff;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 2px solid;
+    border-right: 0.3rem;
+    border-bottom: 0.3rem;
+    transition: 0,4s all linear;
+    align-self: end;
+    margin-top: 40px;   
+}
+img { /*giving the size to the image*/
+    max-width: 100%;
+
+}
+.sideflim1 { /*working on container 2 by giving the flex*/
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1.5px 1.5px rgb(212, 211, 211);
+    padding: 10px;
+    flex: 1;
+}
+
+.container3 {  /*working on container 3 by giving the flex*/
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1.5px 1.5px rgb(212, 211, 211);
+    padding: 10px;
+    flex: 1;
+}
+.container4 {  /*working on container 4 by giving the flex*/
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    padding: 10px;
+    box-shadow: 1.5px 1.5px rgb(212, 211, 211);
+}
+.container5 { /*working on container 5 by giving the flex*/
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    box-shadow: 1.5px 1.5px rgb(212, 211, 211);
+}
+main { /*working on the whole content of the page*/
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 0 1rem;
+}
+
+
+@media (min-width:481px){ /*adding the media queries for the 481px */
+    .top{
+        flex-direction: row;
+    }
+    .bottom {
+        flex-direction: row;
+    }
+}
+@media (min-width:1024px){ /*adding the media queries for the 1024px*/
+    main{
+        flex-direction: row;
+    }
+    .top{
+        flex-direction: column;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+    .navbar {
+        display: none;
+    }
+
+}
+@media (min-width:1280px){ /*adding the media queries for the 1280px*/
+    main{
+        flex-direction: row;
+    }
+    .top{
+        flex-direction: row;
+    }
+    .bottom{
+        flex-direction: row;
+    }
+}
