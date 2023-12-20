@@ -1,0 +1,24 @@
+.container{
+    background-color: rgb(70, 43, 226);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.item{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 20px;
+    background-color: rgb(196, 243, 255);
+    
+}
+.item1{
+    align-self: flex-start;
+}
+.item3{
+    align-self: flex-end;
+    flex-grow: 1;
+}
+.item5{
+    align-self: flex-start;
+}
