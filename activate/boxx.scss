@@ -1,0 +1,26 @@
+$defaultcolor:rgb(234, 28, 28);
+$warmcolor:rgb(0, 255, 51);
+$coolcolor:rgb(19, 70, 192);
+
+
+.default-div{
+    width:200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: $defaultcolor;
+    color: white;
+}
+.warm-div{
+    @extend .default-div;
+    background-color: $warmcolor;
+    color: black;
+}
+.cool-div{
+    @extend .default-div;
+    background-color: $coolcolor;
+    color:rgb(91, 181, 214)
+
+}
