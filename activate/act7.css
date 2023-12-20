@@ -1,0 +1,44 @@
+section {
+  display: flex;
+}
+section div {
+  flex-grow: 1;
+}
+
+.medium, .biggest, .bigger, .smallest, .smaller {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e76f0;
+  cursor: pointer;
+  font-size: 1em;
+}
+.medium:hover, .biggest:hover, .bigger:hover, .smallest:hover, .smaller:hover {
+  background-color: black;
+  color: white;
+}
+
+.smaller {
+  height: 100px;
+  background-color: #ff8ee3;
+  font-size: 0.9em;
+}
+
+.smallest {
+  height: 50px;
+  background-color: #ffc1f0;
+  font-size: 0.8em;
+}
+
+.bigger {
+  height: 200px;
+  background-color: #1a0fb7;
+  font-size: 1.1em;
+}
+
+.biggest {
+  height: 250px;
+  background-color: #130b88;
+  font-size: 1.2em;
+}/*# sourceMappingURL=act7.css.map */
