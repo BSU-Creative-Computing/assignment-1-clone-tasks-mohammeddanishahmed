@@ -1,0 +1,15 @@
+$default-color:#acc0e0;
+
+.default-div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    background-color: $default-color;
+}
+
+.adjusted-div{
+    @extend .default-div;
+    background-color: lighten($default-color,10%);
+}
