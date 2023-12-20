@@ -1,0 +1,26 @@
+.primary-button {
+  background-color: #0d4d78;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Secondary-button {
+  background-color: #b11515;
+  color: rgb(214, 224, 26);
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.warning-button {
+  background-color: #14d638;
+  color: rgb(15, 41, 237) 78;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+}/*# sourceMappingURL=profscss.css.map */
