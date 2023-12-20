@@ -1,0 +1,48 @@
+$default-color:#4e76f0;
+$small-color:#ff8ee3;
+$big-color:#1a0fb7;
+
+section{
+    display: flex;
+    div{
+        flex-grow: 1;
+
+    }
+}
+.medium{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $default-color;
+    cursor: pointer;
+    font-size: 1em;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+.smaller{
+    @extend.medium;
+    height: 100px;
+    background-color: $small-color;
+    font-size: 0.9em;
+}
+.smallest{
+    @extend.medium;
+    height: 50px;
+    background-color: lighten( ($small-color), 10%);
+    font-size: 0.8em;
+}
+.bigger{
+    @extend.medium;
+    height: 200px;
+    background-color: $big-color;
+    font-size: 1.1em;
+}
+.biggest{
+    @extend.medium;
+    height: 250px;
+    background-color: darken($big-color, 10%);
+    font-size: 1.2em;
+}
