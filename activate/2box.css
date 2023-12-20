@@ -1,0 +1,12 @@
+.default-div, .adjusted-div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  background-color: #acc0e0;
+}
+
+.adjusted-div {
+  background-color: #d1dcee;
+}/*# sourceMappingURL=2box.css.map */
