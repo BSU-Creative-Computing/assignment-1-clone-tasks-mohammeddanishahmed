@@ -1,0 +1,99 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(246, 246, 246);
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+/*Full gage width*/
+.page{
+    width: 100%;
+}
+/*  header*/
+header{
+    background-color: white;
+    width: 100%;
+}
+/* rows and colounms of the images*/
+.image{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+/*img size*/
+img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    object-fit: cover;
+}
+/*padding for the text*/
+.texts{
+    padding: 10px;
+}
+
+/*  footer */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* screen size greater than 1024px */
+@media (width > 1024px) {
+
+    .page{
+        margin: auto;
+        width: 1024px;
+    }
+
+    /* logo */
+    header img{
+        width: 5%;
+        margin: 5px;
+    }
+}
+
+/* screen size between 800px-1024px */
+@media (800px <= width <= 1024px) {
+    /* logo */
+    header img{
+        width: 6%;
+        margin: 5px;
+    }
+}
+
+/* between 480px-800px */
+@media (520px <= width <= 800px) {
+    /* logo */
+    header img{
+        width: 7%;
+        margin: 5px;
+    }
+    
+    .image{
+        /* 2 columns */
+        grid-template-columns: repeat(2, 1fr);
+        /* 3 rows */
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+}
+
+@media (520px > width) {
+
+    header img{
+        width: 30px;
+        margin: 5px;
+    }
+    
+    .image{
+        /* 1 column */
+        grid-template-columns: repeat(1, 1fr);
+        /* 6 rows */
+        grid-template-rows: repeat(6,1fr);
+    }
+}
