@@ -1,0 +1,28 @@
+body{ background-color: white;
+    margin:0;
+    padding:10px;
+}
+header{
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+footer{
+    background-color: #1d44a9;
+    padding : 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#aside{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 2fr  1fr;
+
+}
+section{
+    border: 1px black solid;
+}
